@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: talibidris/podinfo
-      tag: dev-l3wg0is3
+      tag: dev-6yc2qevt
     replicaCount: 1
     hpa:
       enabled: false
