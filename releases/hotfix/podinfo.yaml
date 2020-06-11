@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:hotfix-*
 spec:
-  releaseName: podinfo-dev
+  releaseName: podinfo-hotfix
   chart:
     git: git@github.com:talibidris/helm-operator-get-started
     path: charts/podinfo
