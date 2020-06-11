@@ -79,7 +79,7 @@ Install Flux by specifying your fork URL (replace `fluxcd` with your GitHub user
 ```bash
 helm upgrade -i flux fluxcd/flux --wait \
 --namespace fluxcd \
---set git.url=git@github.com:fluxcd/helm-operator-get-started
+--set git.url=git@github.com:talibidris/helm-operator-get-started
 ```
 
 Install the `HelmRelease` Kubernetes custom resource definition:
@@ -160,7 +160,7 @@ The *ci-mock.sh* script does the following:
 Let's create an image corresponding to the `dev` branch (replace `stefanprodan` with your Docker Hub username):
 
 ```
-$ cd hack && ./ci-mock.sh -r stefanprodan/podinfo -b dev
+$ cd hack && ./ci-mock.sh -r talibidris/podinfo -b dev
 
 Sending build context to Docker daemon  4.096kB
 Step 1/15 : FROM golang:1.13 as builder
