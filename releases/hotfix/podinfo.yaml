@@ -1,0 +1,22 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: podinfo-hotfix
+  namespace: hotfix
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:hotfix-*
+spec:
+  releaseName: podinfo-dev
+  chart:
+    git: git@github.com:talibidris/helm-operator-get-started
+    path: charts/podinfo
+    ref: master
+  values:
+    image:
+      repository: talibidris/podinfo
+      tag: hotfix-ylj5zn1z
+    replicaCount: 1
+    hpa:
+      enabled: false
