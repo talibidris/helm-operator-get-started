@@ -294,7 +294,7 @@ If I want to create a new environment, let's say for hotfixes testing, I would d
 * create a dir `releases/hotfix`
 * create a HelmRelease named `podinfo-hotfix`
 * set the automation filter to `glob:hotfix-*`
-* make the CI tooling publish images from my hotfix branch to `stefanprodan/podinfo:hotfix-sha`
+* make the CI tooling publish images from my hotfix branch to `talibidris/podinfo:hotfix-sha`
 
 ### Production promotions with sem ver
 
