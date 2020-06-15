@@ -17,4 +17,4 @@ spec:
     image:
       repository: talibidris/podinfo
       tag: 0.4.13
-    replicaCount: 3
+    replicaCount: 8
